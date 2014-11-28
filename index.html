@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Bennerbot by jdbener</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Bennerbot</h1>
+        <h2>Bennerbot is a simple, open source, java irc chat bot designed to manage Hitbox and Twitch simultaneously</h2>
+        <a href="https://github.com/jdbener/BennerBot" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>Hello, my name is Jdbener and today I am going to give you a basic walk through of how to use my twitch/hitbox chatbot, BennerBot! Bennerbot has been designed differently than other chatbots, it is designed by streamers for streamers, it has been designed to manage both twitch and hitbox simultaneously, it has also been written in java so it can be used from anywhere! If you have any bug reports or feature requests feel free to post an issue on the GitHub page and will try my best to include your input.</p>
+
+<p>There are 4 steps to running BennerBot:</p>
+
+<ol>
+<li><p>Configuration: in the config folder is a file called config.yml. Open this folder in notepad or whatever you use, and edit it to your liking it is well commented
+and you should have no problem figuring out what things do.
+There is also a file called commands.yml. Use this file to decide what commands you want
+(Dont touch any of the other files unless you know what you are doing)</p></li>
+<li><p>Jar: in the main folder there will a file, bennerbot.jar, this file will run the bot.</p></li>
+<li><p>WebDisplay: in the main folder is a file called index.html, if you have bennerbot.jar running you will be able to view the chat in this file instead of the included GUI.
+If you want to embead the chat into something you can acsess a raw feed in resource/output-dirty.txt or a cleaned up version at output.txt, for all you people who want to do cool stuff!</p></li>
+<li><p>Extensions: there is a folder called plugins, you can add plugins to this folder if you want to exend bennerbots abilities. 
+There is a file called BasicCommands.java that file contains a simple example plugin.</p></li>
+</ol>
+
+<p><strong>If you ever find a bug or have and idea for a feature please post a comment <a href="https://github.com/jdbener/BennerBot/issues">here</a></strong></p>
+
+<p><strong>Auto Installer can be found <a href="https://github.com/jdbener/BennerBot/releases/tag/autoupdater">here</a></strong></p>
+
+<p><strong>If you like what im doing feel free to: <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XF5ZN3N5ULFAE"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="alt text" title="Title"></a></strong></p>
+
+<p>(Post an Issue if i should add anything else to this file)</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features:</h2>
+
+<ol>
+<li><p>Accessible, Bennerbot is written in java so it can be used anywhere. We also dont have limitations who can use it.</p></li>
+<li><p>Extendible, Bennerbot has been designed to be very extendible with a plugin system with access to all parts of the bot</p></li>
+<li><p>Community Drive, Every step I take in design BennerBot is inspired, suggested, written, or requested by the community.</p></li>
+<li><p>API Integration, Bennerbot has been designed to integrate closely with twitch, hitbox, and many more to come.</p></li>
+<li><p>Server Mindful, Bennerbot's design is server friendly, just pop it in, start it up and be free!</p></li>
+</ol>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog:</h2>
+
+<p><strong>Alpha Versions:</strong></p>
+
+<ul>
+<li><p>Mk1: This is the original version including basic chat commands !hello and !time as well as join messages, a chat relay, and basic chat output. Designed to work with both Twitch.tv and Hitbox.tv.</p></li>
+<li><p>Mk2: Compressed the bot into 1 file from two, updated README</p></li>
+<li><p>MK3: Cleaner right! Did alot of under the hood work to clean up the file system, make the bot faster, add emoticon support, add a color system. Oh and did i mention the GUI? No? Well we have a GUI now!</p></li>
+<li><p>MK4: The Plugin Update! Added the plugin system, as well as alot of underthehood changes.</p></li>
+<li><p>MK5: The Realise Update! This is the first update that was officially realised to the public, as well as a custom command system and variables. I also did a few changes to the GUI to make it more usable and/or chroma-able.</p></li>
+<li><p>MK6: (mk5.1) This update simply adds the ability to send messages in chat</p></li>
+<li><p>MK7: The GUI Update! This update completely redesigned the GUI that the bot uses, it fixes many issues that the old gui had, as well as allowing the bot to be run through the terminal!</p></li>
+<li><p>MK8: (mk7.1) This update simplifies the GUI and fixes some of the bugs from previous version, we are also taking our first steps towards being open source</p></li>
+<li><p>MK9: This update involves alot of new changes, mainly: GUI Updates, Twitch Emoticon Support, More API Work, and source!!! Yes you can finally look at my ugly source.</p></li>
+<li><p>MK10: (mk9.1) This update fixes the huge amount of memory used by the emoticon system in the last update</p></li>
+<li><p>MK11: The Quality of Life Update! A bunch of general fixes to improve the quality of life for you the user!</p></li>
+<li><p>MK12: The Automatic Update! Added an auto updater and some more quality of life stuff</p></li>
+<li><p>MK13: The Bountiful Update! Added Automatic messages, Better Custom messages and A countdown. As well as more quality of life stuff. Removed herobrine</p></li>
+</ul>
+
+<h2>
+<a id="libraries-used" class="anchor" href="#libraries-used" aria-hidden="true"><span class="octicon octicon-link"></span></a>Libraries Used:</h2>
+
+<ul>
+<li><p><a href="http://code.google.com/p/pircbotx/">PIRCBotX</a> ~ License: This software product is OSI Certified Open Source Software, available under the GNU General Public License (GPL). Since the GPL may be too restrictive for use in proprietary applications, a commercial license is also provided.</p></li>
+<li><p><a href="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</a>/<a href="https://commons.apache.org/proper/commons-codec/">Apache Commons Codec</a> ~ <a href="http://www.apache.org/licenses/">License</a></p></li>
+<li><p><a href="https://github.com/google/guava">Google Guava</a> ~ <a href="https://github.com/google/guava/blob/master/COPYING">License</a></p></li>
+<li><p><a href="http://www.slf4j.org/">slf4j</a> ~ <a href="http://www.slf4j.org/license.html">License</a></p></li>
+<li><p><a href="http://code.google.com/p/json-simple/">JSON-Simple</a> ~ <a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></p></li>
+<li><p><a href="http://code.google.com/p/jspf/">Java Simple Plugin System</a> ~ <a href="http://opensource.org/licenses/BSD-3-Clause">License</a></p></li>
+<li><p><a href="http://jyaml.sourceforge.net/">JYAML</a> ~ <a href="http://opensource.org/licenses/BSD-3-Clause">License: JYaml has a BSD style open-source license.</a></p></li>
+<li><p><a href="http://logback.qos.ch/">LogBack</a> ~ <a href="http://logback.qos.ch/license.html">License</a></p></li>
+<li><p><a href="https://bitbucket.org/xerial/sqlite-jdbc">SQLite-JDBC</a> ~ <a href="http://www.apache.org/licenses/">License</a></p></li>
+</ul>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Licence:</h2>
+
+<p>Copyright © 2014 Joshua Dahl (<a href="mailto:jdbener@gmail.com">jdbener@gmail.com</a>)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish and/or distribute the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<ol>
+<li><p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p></li>
+<li><p>The Software is never to be sold or other wise distributed for commercial gain.</p></li>
+</ol>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jdbener/BennerBot/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jdbener/BennerBot/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jdbener/BennerBot"></a> is maintained by <a href="https://github.com/jdbener">jdbener</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
